@@ -1,0 +1,81 @@
+ErrorDocument 404 /404.htm
+
+
+
+
+redirect 301 /about.asp /about.htm
+redirect 301 /art.asp /hire.htm
+redirect 301 /backpack.asp /tutorials.htm
+redirect 301 /balaclava.asp /tutorials.htm
+redirect 301 /beefjerky.asp /characters.htm
+redirect 301 /bodysuit.asp /tutorials.htm
+redirect 301 /caninesuit.asp /tutorials.htm
+redirect 301 /caninetails.asp /tutorials.htm
+redirect 301 /cathlamet.asp /characters.htm
+redirect 301 /claws.asp /tutorials.htm
+redirect 301 /clothes.asp /tutorials.htm
+redirect 301 /commission.asp /hire.htm
+redirect 301 /commissions.asp /hire.htm
+redirect 301 /contact.asp /contact.htm
+redirect 301 /crafts.asp /tutorials.htm
+redirect 301 /default.asp /index.htm
+redirect 301 /diagrams.asp /tutorials.htm
+redirect 301 /digitigrade.asp /tutorials.htm
+redirect 301 /ears.asp /tutorials.htm
+redirect 301 /eyes.asp /tutorials.htm
+redirect 301 /fans.asp /tutorials.htm
+redirect 301 /felinetails.asp /tutorials.htm
+redirect 301 /finishedmasks.asp /timeline.htm
+redirect 301 /fluff.asp /index.htm
+redirect 301 /foam.asp /tutorials.htm
+redirect 301 /footpaws.asp /tutorials.htm
+redirect 301 /furring.asp /tutorials.htm
+redirect 301 /furry.asp /about.htm
+redirect 301 /fursuiting.asp /tutorials.htm
+redirect 301 /info.asp /terms.htm
+redirect 301 /journal.asp /index.htm
+redirect 301 /links.asp /sponsors.htm
+redirect 301 /makingtails.asp /tutorials.htm
+redirect 301 /mangle.asp /characters.htm
+redirect 301 /maskmaking.asp /tutorials.htm
+redirect 301 /maskvideo.asp /tutorials.htm
+redirect 301 /matrices.asp /characters.htm
+redirect 301 /matricescostume.asp /characters.htm
+redirect 301 /matricessuit.asp /tutorials.htm
+redirect 301 /mukilteo.asp /characters.htm
+redirect 301 /mycostumes.asp /characters.htm
+redirect 301 /nose.asp /tutorials.htm
+redirect 301 /NorthSound/ /index.htm
+redirect 301 /NorthSound/index.htm /index.htm
+redirect 301 /orderguide.asp /hire.htm
+redirect 301 /other.asp /index.htm
+redirect 301 /othercharacters.asp /characters.htm
+redirect 301 /othertails.asp /tutorials.htm
+redirect 301 /paperfox.asp /tutorials.htm
+redirect 301 /pawpads.asp /tutorials.htm
+redirect 301 /paws.asp /tutorials.htm
+redirect 301 /portfolio.asp /portfolio.htm
+redirect 301 /pricing.asp /hire.htm
+redirect 301 /props.asp /tutorials.htm
+redirect 301 /quotes.asp /index.htm
+redirect 301 /shaving.asp /tutorials.htm
+redirect 301 /sponsors.asp /sponsors.htm
+redirect 301 /story.asp /characters.htm
+redirect 301 /tag.asp /tutorials.htm
+redirect 301 /tails.asp /tutorials.htm
+redirect 301 /terms.asp /terms.htm
+redirect 301 /treevercostume /characters.htm
+redirect 301 /videos.asp /tutorials.htm
+redirect 301 /wash.asp /tutorials.htm
+redirect 301 /washing.asp /tutorials.htm
+redirect 301 /webcam.asp /index.htm
+
+# Begin EnforceSSL matrices.net
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^(www.)?matrices.net$
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L]
+</IfModule>
+# End EnforceSSL
+
